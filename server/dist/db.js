@@ -1,6 +1,9 @@
-const { DataStore } = require('notarealdb');
+'use strict';
 
-const store = new DataStore('./data');
+var _require = require('notarealdb'),
+    DataStore = _require.DataStore;
+
+var store = new DataStore('./data');
 
 module.exports = {
   companies: store.collection('companies'),
