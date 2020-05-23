@@ -1,0 +1,21 @@
+@import './../../assets/styles/variable.scss';
+
+.container__wrap {
+    padding: 0px 20px;
+}
+
+.container__header {
+    padding: 20px 0px;
+    font-size: 24px;
+}
+
+.container__content {
+    // background-color: yellowgreen;
+}
+
+.highlight-name { 
+    color: $link-text;
+    &:hover {
+        cursor: pointer;
+    }
+}

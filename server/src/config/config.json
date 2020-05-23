@@ -1,0 +1,16 @@
+{
+  "development": {
+    "uris": "mongodb+srv://dash:dashsayhello@cluster0-bpy5y.mongodb.net/test?retryWrites=true&w=majority",
+    "useNewUrlParser": true,
+    "useUnifiedTopology": true,
+    "useCreateIndex": true
+  },
+  "test": {
+    "uris": "",
+    "useNewUrlParser": true
+  },
+  "production": {
+    "uris": "",
+    "useNewUrlParser": true
+  }
+}

@@ -1,3 +1,37 @@
-type Query {
+# Type
+
+type User {
+    id: ID
     name: String
+    email: String
+    phoneNumber: String
+    address: String,
+    createDate: String
+}
+
+# Input
+
+input userInput {
+    name: String !,
+    email: String,
+    phoneNumber: String,
+    address: String
+}
+
+# Query
+type Query {
+    getAllUser: [User]
+    getUserByID(id: ID!): User
+}
+
+# mutation
+
+type Mutation {
+    createUser(input:userInput ) : User!
+}
+
+
+schema {
+    query: Query,
+    mutation: Mutation
 }

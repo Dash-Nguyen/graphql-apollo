@@ -1,0 +1,45 @@
+{
+    "extends": "./tsconfig.extended.json",
+    "compilerOptions": {
+        "experimentalDecorators": true,
+        "module": "esnext",
+        "target": "es5",
+        "sourceMap": true,
+        "allowJs": false,
+        "skipLibCheck": false,
+        "esModuleInterop": true,
+        "allowSyntheticDefaultImports": true,
+        "strict": false,
+        "forceConsistentCasingInFileNames": true,
+        "moduleResolution": "node",
+        "resolveJsonModule": true,
+        "noEmit": true,
+        "jsx": "react",
+        "skipDefaultLibCheck": true,
+        "downlevelIteration": true,
+        "noImplicitAny": true,
+        "lib": [
+            "es2018",
+            "dom"
+        ],
+        "isolatedModules": true
+    },
+    "eslint.validate": [
+        "javascript",
+        "javascriptreact",
+        {
+            "language": "typescript",
+            "autoFix": true
+        },
+        {
+            "language": "typescriptreact",
+            "autoFix": true
+        }
+    ],
+    "exclude": [
+        "node_modules"
+    ],
+    "include": [
+        "src"
+    ]
+}

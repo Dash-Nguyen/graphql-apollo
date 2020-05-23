@@ -1,0 +1,28 @@
+@import './../../assets/styles/variable.scss';
+
+
+.global-search{ 
+    max-width: 180px;
+    .ant-input-affix-wrapper {
+        border-radius: 8px;
+
+        .anticon{ 
+            font-size: 20px;
+            color: #978f8f;
+        }
+    }
+}
+
+.header-wrap{ 
+    display: inline-flex;
+    .header-wrap__logo{ 
+        width: 60px;
+        img {
+            width: 50px;
+            height: 50px;
+        }
+    }
+    .header-wrap__content{
+        width: calc(100vw - 60px);
+    }
+}

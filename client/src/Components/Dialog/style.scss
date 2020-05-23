@@ -1,0 +1,84 @@
+.dialog-header {
+    .icon-ico_cancel {
+        color: #ccc;
+        &:hover {
+            color: #999;
+        }
+    }
+}
+
+.ant-modal-content {
+    height: 100%;
+}
+
+.ant-modal.custom-modal {
+    padding-bottom: 0;
+
+    .ant-modal-header {
+        display: none;
+    }
+
+    .ant-modal-content {
+        border-radius: 6px;
+    }
+
+    .ant-modal-body {
+        height: 100%;
+        padding: 0;
+
+        > div:first-child {
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+        }
+    }
+
+    .ant-confirm-body-wrapper {
+        height: 100%;
+    }
+
+    .ant-confirm-body {
+        height: 100%;
+    }
+
+    .ant-confirm-content {
+        height: 100%;
+
+        > div:first-child {
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+        }
+    }
+
+    .dialog-header {
+        span.icon-ico_cancel {
+            margin-left: auto;
+            position: absolute;
+            top: 16px;
+            cursor: pointer;
+            right: 16px;
+            font-size: 10px;
+        }
+
+        .dialog-title {
+            height: 45px;
+            display: flex;
+            align-items: center;
+            border-bottom: 1px solid #eee;
+            padding-left: 20px;
+            font-weight: bold;
+            font-size: 14px;
+            color: #555555;
+            text-transform: uppercase;
+        }
+    }
+
+    .dialog-footer {
+        height: 60px;
+        border-top: 1px solid #eee;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+}
